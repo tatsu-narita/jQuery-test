@@ -342,7 +342,54 @@ $(function() {
 title属性の値がfで始まり、かつtitle属性の値にthが含まれる要素
 4番目のli要素が赤になる
 */
-
+/*
 $(function() {
     $("[title^='f'][title*='th']").css("color", "red");
+});
+*/
+
+//jqueryの独自セレクター
+//jqueryではcssセレクター以外にも独自のセレクターが利用できる
+
+//firstセレクター/lastセレクター
+/*
+セレクターの中から最初の要素をfirstセレクター
+最後の要素をlastセレクターで指定できる
+
+first-child擬似クラスやlast-child擬似クラスは共通の親要素を持つ要素から
+最初・最後の要素を選択するのに対して
+last/firstセレクターは指定したセレクターで最初・最後に登場する要素だけを選択できる
+*/
+/*
+$(function() {
+    $("li:first").css("color", "red");
+    $("li:last").css("color", "red");
+});
+*/
+
+//evenセレクター/oddセレクター
+/*
+セレクターの中から偶数番目に出現する要素をevenセレクターで、
+奇数番目に出現するセレクターをoddセレクターで指定できる。
+ただし、Javascriptでは数字を0から数えるので最初の要素は0
+*/
+/*
+$(function() {
+    $("li:even").css("color", "blue");
+    $("li:odd").css("color", "red");
+});
+*/
+
+//epセレクター/ltセレクター/gtセレクター
+/*
+セレクターの中から特定の順番の要素をep(equal)セレクターで、
+特定の要素より前の要素をlt(less than)セレクターで、
+後ろの要素をgt(greater than)セレクターで選択できる
+要素は登場する順番を数値で指定する。※1番目の要素の場合は0
+*/
+
+$(function() {
+    $("li:lt(2)").css("color", "red");
+    $("li:eq(2)").css("color", "blue");
+    $("li:gt(2)").css("color", "green");
 });
