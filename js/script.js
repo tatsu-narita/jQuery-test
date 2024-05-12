@@ -138,7 +138,45 @@ $(function() {
 子要素やテキストを含まない要素を選択できる。
 セレクターの後ろに:emptyと記述する
 */
-
+/*
 $(function() {
     $("li:empty").css("color", "red");
+});
+*/
+
+//nth-child擬似クラス
+/*
+セレクターの要素から任意の番号の要素だけを選択できる
+セレクターの後ろに:nth-child(番号)と記述する。
+番号だけでなく
+偶数$("li:nth-child(even)")
+奇数$("li:nth-child(odd)")
+倍数$("li:nth-child(3n)")
+も可能
+*/
+/*
+$(function() {
+    $("li:nth-child(3)").css("color", "red");
+});
+*/
+
+//last-child擬似クラス
+/*
+特定のセレクターの中で最後の要素を選択できる。
+セレクターの後ろに:last-childと記述
+*/
+/*
+$(function() {
+    $("li:last-child").css("color", "red");
+});
+*/
+
+//only-child擬似クラス
+/*
+セレクターに特定の要素が1つだけ含まれる場合選択できる。
+セレクターの後ろに:only-childと記述
+*/
+
+$(function() {
+    $("li span:only-child").css("color", "red");
 });
