@@ -234,7 +234,33 @@ $(function() {
 /*
 セレクターに指定した要素で最後にあたる要素を選択できる
 */
-
+/*
 $(function() {
     $("dt:last-of-type").css("color", "red");
 });
+*/
+
+//only-of-type擬似クラス
+/*
+セレクターに指定した要素が1つだけ存在する場合にその要素を選択できる
+dt要素は1つだけ存在するので赤になる
+*/
+/*
+$(function() {
+    $("dt:only-of-type").css("color", "red");
+    $("dd:only-of-type").css("color", "blue");
+});
+*/
+
+//lang擬似クラス
+/*
+lang属性から要素を選択できる。lang属性はjaと言った具合に言語を指定したり
+en-usのように言語と地域を組み合わせて指定できるが、lang擬似クラスは
+その両方に対応している
+*/
+
+$(function() {
+    $(":lang(ja)").css("color", "red");
+    $(":lang(en)").css("color", "blue");
+    $(":lang(en-us").css("color", "green");
+}); 
