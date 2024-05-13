@@ -176,7 +176,65 @@ $(function() {
 セレクターに特定の要素が1つだけ含まれる場合選択できる。
 セレクターの後ろに:only-childと記述
 */
-
+/*
 $(function() {
     $("li span:only-child").css("color", "red");
+});
+*/
+
+//nth-last-child擬似クラス
+/*
+セレクターに指定した要素で後ろから数えて指定した順番にある要素を選択できる
+:nth-last-child(番号)と記述
+*/
+/*
+$(function() {
+    $("li:nth-last-child(2)").css("color", "red");
+});
+*/
+
+//nth-of-type擬似クラス
+/*
+セレクターに指定した要素で、指定した順番にある要素を選択できる。
+nth-child擬似クラスと似ているが、nth-child擬似クラスが要素の種類に関係なく
+全ての兄弟要素を数えるのに対して、nth-of-type擬似クラスは指定した要素のみを数える
+*/
+/*
+$(function() {
+    $("dt:nth-of-type(2)").css("color", "red");
+});
+*/
+
+//nth-last-of-type擬似クラス
+/*
+セレクターに指定した要素で、後ろから数えて指定した順番に当たる要素を選択できる
+nth-of-type擬似クラスと同様に、指定した要素だけ数える
+
+後ろから数えて2番目のdt要素が赤くなる
+*/
+/*
+$(function() {
+    $("dt:nth-last-of-type(2)").css("color", "red");
+});
+*/
+
+//first-of-type擬似クラス
+/*
+セレクターに指定した要素で最初に当たる要素を選択できる
+
+最初のddが赤になる
+*/
+/*
+$(function() {
+    $("dd:first-of-type").css("color", "red");
+});
+*/
+
+//last-of-type擬似クラス
+/*
+セレクターに指定した要素で最後にあたる要素を選択できる
+*/
+
+$(function() {
+    $("dt:last-of-type").css("color", "red");
 });
