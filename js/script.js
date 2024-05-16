@@ -281,7 +281,68 @@ $(function() {
 /*
 特定の属性が、特定の値を持つ要素を選択できる
 */
-
+/*
 $(function() {
     $("[title='second']").css("color", "red");
+});
+*/
+
+//[attribute!='value']
+/*
+特定の属性が、特定の値を持たない要素を選択できるセレクター
+このセレクターは要素セレクターの後に続けて記述する必要がある
+
+title属性の値が[first]以外のli要素が赤になる
+*/
+/*
+$(function() {
+    $("li[title!='first']").css("color", "red");
+});
+*/
+
+//[attribute^='value']
+/*
+特定の属性の値が、特定の文字列で始まっている要素を選択できます
+
+title属性の値がfで始まる要素、つまり1.4番目のli要素が赤色になる
+*/
+/*
+$(function() {
+    $("[title^='f']").css("color", "red");
+});
+*/
+
+//[attribute$='value']
+/*
+特定の属性の値が、特定の文字列で終わっている要素を選択できる
+
+title属性の値がdで終わっている要素、つまり2.3番目のli要素が赤色になる
+*/
+/*
+$(function() {
+    $("[title$='d']").css("color", "red");
+});
+*/
+
+//[attribute*='value']
+/*
+特定の属性が特定の文字列を含んでいる要素を指定できる
+title属性の値にirを含む要素、1.3番目のli要素が赤になる
+*/
+/*
+$(function() {
+    $("[title*='ir']").css("color", "red");
+});
+*/
+
+//[attributeFilter1][attributeFilter2]
+/*
+複数の属性セレクターを同時に指定できる
+
+title属性の値がfで始まり、かつtitle属性の値にthが含まれる要素
+4番目のli要素が赤になる
+*/
+
+$(function() {
+    $("[title^='f'][title*='th']").css("color", "red");
 });
