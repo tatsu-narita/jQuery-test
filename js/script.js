@@ -387,9 +387,31 @@ $(function() {
 後ろの要素をgt(greater than)セレクターで選択できる
 要素は登場する順番を数値で指定する。※1番目の要素の場合は0
 */
-
+/*
 $(function() {
     $("li:lt(2)").css("color", "red");
     $("li:eq(2)").css("color", "blue");
     $("li:gt(2)").css("color", "green");
+});
+*/
+
+//headerセレクター
+/*
+h1~h6までのheading要素をまとめて選択できる
+*/
+/*
+$(function() {
+    $(":header").css("color","red");
+});
+*/
+
+//containsセレクター/hasセレクター
+/*
+contains特定の文字列が含まれている要素を
+hasセレクターは特定のよう嘘が含まれている要素を選択できる
+*/
+
+$(function() {
+    $("li:contains('サンプル')").css("color", "red");
+    $("li:has(strong)").css("color", "red");
 });
