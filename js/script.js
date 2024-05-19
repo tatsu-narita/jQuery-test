@@ -410,8 +410,31 @@ $(function() {
 contains特定の文字列が含まれている要素を
 hasセレクターは特定のよう嘘が含まれている要素を選択できる
 */
-
+/*
 $(function() {
     $("li:contains('サンプル')").css("color", "red");
     $("li:has(strong)").css("color", "red");
+});
+*/
+
+//parentセレクター
+/*
+何らかの子要素やテキストを含む要素を選択できる
+css3セレクターで紹介したempty擬似クラスと逆のセレクターです
+
+空のli要素以外のli要素、つまり1.3番目が赤になる
+*/
+/*
+$(function() {
+    $("li:parent").css("color", "red");
+});
+*/
+
+//テキストの変更と取得
+/*
+html要素に含まれるテキストをjqueryで変更または取得するにはtext()と命令する
+*/
+
+$(function() {
+    $("p#first").text("変更後");
 });
