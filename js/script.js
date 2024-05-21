@@ -470,7 +470,41 @@ htmlを変更するにはhtml()のうちが歯に変更後のhtmlを記述しま
 実行するとid属性にfirstが設定されているp要素の内容が
 <strong>変更後</strong>に変更される
 */
-
+/*
 $(function() {
     $("p#first").html("<strong>変更後</strong>");
+});
+*/
+
+//htmlの取得
+/*
+htmlの取得にもhtml()を使う。text()でテキストを取得する場合と同じく
+括弧内には何も記述しない
+
+$("p#first").html();
+
+text()と同じように、取得と変更の命令を組み合わせて
+セレクターで指定した要素を書き換えてみる
+*/
+/*
+$(function() {
+    $("p#second").html($("p#first").html());
+});
+*/
+
+//htmlの挿入
+/*
+html()を使うと、もともと存在していた要素の内容が全て上書きされます。
+要素の内容を残したままhtmlを追加したいときは、要素を挿入する
+prepend(),append(),before(),after()を使う
+*/
+
+//html要素内の先頭に挿入
+/*
+指定した要素内部の先頭にhtmlを挿入するには、prepend()を使います
+prepend()は、html()と同様に追加したいhtmlを括弧内に記述する
+*/
+
+$(function() {
+    $("p#first").prepend("<strong>先頭に挿入</strong>");
 });
