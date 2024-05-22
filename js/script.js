@@ -504,7 +504,52 @@ prepend(),append(),before(),after()を使う
 指定した要素内部の先頭にhtmlを挿入するには、prepend()を使います
 prepend()は、html()と同様に追加したいhtmlを括弧内に記述する
 */
-
+/*
 $(function() {
     $("p#first").prepend("<strong>先頭に挿入</strong>");
+});
+*/
+
+//html要素内の最後に挿入
+/*
+指定した要素内部の最後にhtmlを挿入するには、append()を使う
+prepend()と同じく追加したいhtmlを括弧内に記述する
+*/
+/*
+$(function() {
+    $("p#first").append("<strong>最後に挿入</strong>");
+});
+*/
+
+//html要素の前に挿入
+/*
+指定した要素の前に挿入するにはbefore()を使う
+*/
+/*
+$(function() {
+    $("p#first").before("<h1>前に挿入</h1>");
+});
+*/
+
+//html要素の後ろに挿入
+//指定した要素の後ろにhtmlを挿入するにはafter()を使う
+/*
+$(function() {
+    $("p#first").after("<h1>後ろに挿入</h1>");
+});
+*/
+
+//htmlの移動
+/*
+htmlの要素を文章内に新たに追加するのではなく、
+もともと存在していた要素の文章内の位置を変更することもできる
+*/
+
+//html要素内の先頭に移動
+/*
+指定した要素を他の要素の内部の先頭に移動するにはprependTo()を使う
+括弧内に移動先の要素をセレクターで指定
+*/
+$(function() {
+    $("strong").prependTo("p");
 });
