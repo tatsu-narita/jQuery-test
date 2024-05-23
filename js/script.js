@@ -561,6 +561,27 @@ $(function() {
 指定した要素を他の要素の内部の最後に移動するにはappendTo()を使う
 移動先の要素をセレクターで指定
 */
+/*
 $(function() {
     $("strong").appendTo("p");
+});
+*/
+
+//html要素の前に移動
+/*
+指定して要素を他の要素の前に移動するにはinsertBefore()を使う
+*/
+/*
+$(function() {
+    $("h1").insertBefore("p");
+});
+*/
+
+//html要素の後ろに移動
+/*
+指定した要素を他の要素の後ろに移動するにはinsertAfter()を使う
+*/
+
+$(function() {
+    $("h1").insertAfter("p");
 });
