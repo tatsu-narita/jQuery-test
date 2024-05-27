@@ -692,12 +692,29 @@ $(function() {
 セレクターで指定した要素に特定の属性が設定されている場合
 removeAttr()で属性を削除できる
 */
-
+/*
 $(function() {
     $("a").removeAttr("target");
 });
+*/
 
 //class属性の追加と削除
 /*
-
+class属性は他の属性と違ってスペース区切りで複数の値を設定できます
+このためclass属性の命令が用意されています
 */
+
+//class属性の追加
+/*
+class属性を追加するにはaddClass()を使う。括弧内に追加したいclass属性の値を記述します
+複数のclass属性をスペース区切りで追加できる
+
+実行後p class="red"に変わる
+*/
+/*
+$(function() {
+    $("p").addClass("red");
+});
+*/
+
+class属性の削除
