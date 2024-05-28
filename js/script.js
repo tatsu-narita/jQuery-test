@@ -717,4 +717,11 @@ $(function() {
 });
 */
 
-class属性の削除
+//class属性の削除
+/*
+class属性の削除にはremoveClass()を使う。括弧内に削除したいclass属性の値を記述します
+複数のclass属性をスペース区切りで追加できる
+*/
+$(function() {
+    $("p").remove("red");
+});
