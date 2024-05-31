@@ -770,8 +770,19 @@ $(function() {
 */
 
 //複数の命令をまとめて記述できるメソッドチェーン
-
+/*
 $(function() {
     $("p").prepend("<strong>先頭に挿入</strong>")
                 .append("<strong>最後に挿入</strong>");
+});
+*/
+
+//2-3 イベント
+//click()の基本の書き方
+//ボタンのクリックで画像を変更するイベント
+
+$(function() {
+    $("button").click(function () { 
+        $("img").attr("src", "images/sea.jpg").attr("alt","海");
+    });
 });
