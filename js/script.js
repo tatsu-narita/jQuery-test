@@ -780,9 +780,40 @@ $(function() {
 //2-3 イベント
 //click()の基本の書き方
 //ボタンのクリックで画像を変更するイベント
-
+/*
 $(function() {
     $("button").click(function () { 
         $("img").attr("src", "images/sea.jpg").attr("alt","海");
+    });
+});
+*/
+
+//イベントが発生した要素を取得する
+/*
+イベントを設定したい要素は1つとは限らない
+複数の要素に対して設定したい場合は、eqセレクターを使う
+ここでは複数の要素aに対してそれぞれ異なるクリックイベントを設定している
+epセレクターは特定の要素のうち指定したい順番の要素を取得するセレクターです
+*/
+
+$(function() {
+    $("a:eq(0)").click(function () { 
+        $("img").attr("src", "images/flower.jpg").attr("alt", "花");
+        return false;
+    });
+
+    $("a:eq(1)").click(function () { 
+        $("img").attr("src", "images/sea.jpg").attr("alt", "海");
+        return false;
+    });
+
+    $("a:eq(2)").click(function () { 
+        $("img").attr("src", "images/jellyfish.jpg").attr("alt", "くらげ");
+        return false;
+    });
+
+    $("a:eq(3)").click(function () { 
+        $("img").attr("src", "images/building.jpg").attr("alt", "建物");
+        return false;
     });
 });
