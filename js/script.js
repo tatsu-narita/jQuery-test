@@ -794,7 +794,7 @@ $(function() {
 複数の要素に対して設定したい場合は、eqセレクターを使う
 ここでは複数の要素aに対してそれぞれ異なるクリックイベントを設定している
 epセレクターは特定の要素のうち指定したい順番の要素を取得するセレクターです
-*/
+
 
 $(function() {
     $("a:eq(0)").click(function () { 
@@ -815,5 +815,30 @@ $(function() {
     $("a:eq(3)").click(function () { 
         $("img").attr("src", "images/building.jpg").attr("alt", "建物");
         return false;
+    });
+});
+
+画像変更機能は実装できたがコードが長い
+そこで便利なのがイベントが発生した要素を取得するセレクター$(this)です。
+
+$(function() {
+    $("a").click(function () { 
+        $("img").attr("src", $(this).attr("href"))
+        .attr("alt", $(this).text());
+        return false;
+    });
+});
+
+*/
+
+//ダブルクリックイベントを完治するdblclick()
+/*
+特定の要素がダブルクリックされた時
+何らかの処理を実行したい場合dblclick()を使う
+記述方法はclick()と同じ
+*/
+$(function() {
+    $("button").dblclick(function() {
+        $("img").attr("src", "images/sea.jpg").attr("alt", "海");
     });
 });
