@@ -837,8 +837,47 @@ $(function() {
 何らかの処理を実行したい場合dblclick()を使う
 記述方法はclick()と同じ
 */
+/*
 $(function() {
     $("button").dblclick(function() {
         $("img").attr("src", "images/sea.jpg").attr("alt", "海");
     });
 });
+*/
+
+//マウスボタンを感知する
+//mousedown()/mouseup()
+/**
+特定の要素上でマウスの何らかのボタンが押されたり離されたりした時に処理を実行します
+ */
+
+//mousedown()
+/*特定の要素上にマウスカーソルがある状態で
+マウスボタンが押された時に処理を実行する
+*/
+/*
+$(function() {
+    $("a").mousedown(function () { 
+        $("img").attr("src", $(this).attr("href"))
+        .attr("alt", $(this).text());
+    }).click(function () { 
+        return false;
+    });
+});
+*/
+
+//mouseup()
+/*
+特定の要素上にマウスカーソルがある状態で
+すでに押されているマウスボタンが離された時に処理を実行する
+*/
+
+$(function() {
+    $("a").mouseup(function () { 
+        $("img").attr("src", $(this).attr("href"))
+        .attr("alt", $(this).text());
+    }).click(function () { 
+        return false;
+    });
+});
+
