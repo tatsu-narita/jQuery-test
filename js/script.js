@@ -871,7 +871,7 @@ $(function() {
 特定の要素上にマウスカーソルがある状態で
 すでに押されているマウスボタンが離された時に処理を実行する
 */
-
+/*
 $(function() {
     $("a").mouseup(function () { 
         $("img").attr("src", $(this).attr("href"))
@@ -880,4 +880,63 @@ $(function() {
         return false;
     });
 });
+*/
 
+//マウスオーバー/マウスアウトを感知する
+//mouseover()/mouseout()
+/*
+特定の要素上にマウスが重なったタイミングを感知して処理を実行する
+mouseover()とmouseout()は多くの場合
+ロールオーバー効果などの用途で組み合わせて使う
+*/
+
+//mouseover()
+//特定の要素上にマウスカーソルが重なった時に処理を実行する
+
+//mouseout()
+//特定の要素上からマウスカーソルが外れた時に処理を実行する
+/*
+$(function() {
+    $("img").mouseover(function () { 
+        $(this).attr("src", "images/sea.jpg").attr("alt", "海");
+    }).mouseout(function () { 
+        $(this).attr("src", "images/flower.jpg").attr("alt", "花");
+    });
+});
+*/
+
+//マウスの動きに合わせて処理を実行する
+//mousemove()
+/*
+特定の要素上でカーソルが動いた場合に処理を実行できる
+実際に利用するには座標などの情報を取得する命令と組み合わせるケースがほとんど。
+mousemove()内のfunction()をfunction(e)にすると
+イベント発生時にe.clientXで現在のマウスのX座標、e.clientYでマウスのY座標を取得できる
+XとYはブラウザーの左上からマウスカーソルまでの距離をピクセル単位で表したもの
+*/
+/*
+$(function() {
+    $("img").mouseover(function (e) { 
+        $("p").html("現在のX座標:"+e.clientX+"<br>現在のY座標"+e.clientY);
+    });
+});
+*/
+
+//イベント発生時に一度だけ処理を実行するone()
+/*
+指定した要素で発生したイベントに対して一度だけ実行する処理設定できるのがone()です
+one()の括弧内にはイベント発生の条件を記述します
+イベント発生の条件にはclick,dblclick,mouseup,mousedown,mouseover,mouseout,mousemove
+などの命令を指定します
+その後をカンマで区切りfunction(){}に実行したい処理を書く
+a要素がクリックされると1度目はimg要素のsrc属性を書き換え,2度目はa要素のhrefに設定されている
+リンク先に移動する
+*/
+
+$(function() {
+    $("a").one("click", function() {
+        $("img").attr("src", $(this).attr("href"))
+        .attr("alt",$(this).text());
+        return false;
+    });
+});
