@@ -932,11 +932,65 @@ one()の括弧内にはイベント発生の条件を記述します
 a要素がクリックされると1度目はimg要素のsrc属性を書き換え,2度目はa要素のhrefに設定されている
 リンク先に移動する
 */
-
+/*
 $(function() {
     $("a").one("click", function() {
         $("img").attr("src", $(this).attr("href"))
         .attr("alt",$(this).text());
         return false;
+    });
+});
+*/
+
+//対象要素を絞ってイベントを登録するon()
+/*
+これまで紹介したイベントを別の書き方で設定できるメソッド
+基本的な書籍はone()と同じでイベントの発生の条件には
+click,dblclick,mouseup,mousedown,mouseover,mouseout,mousemove
+などのイベントを感知する命令を指定する。
+その後をカンマで区切りfunction(){}に実行したい処理を書く
+one()とは異なりここで設定した処理はイベントが発生するたびに実行されます
+
+
+$(function() {
+    $("a").on("click", function() {
+        $("img").attr("src", $(this).attr("href"))
+        .attr("alt", $(this).text());
+        return false;
+    });
+});
+
+
+これはclick(function(){})と同じ動きをする。
+が、on()には別の機能があり
+イベントの発生条件の後ろにイベントが発生する要素を指定できる
+
+
+$(function() {
+    $("ul").on("click","a", function() {
+        $("img").attr("src", $(this).attr("href"))
+        .attr("alt", $(this).text());
+        return false;
+    });
+});
+
+
+ul要素内のa要素がクリックsれたときにimg要素のsrc属性とalt属性を書き換える
+このようにセレクターで指定した要素内にある特定の要素でイベントが発生した時だけ
+処理を実行できる機能がon()には用意されている
+
+この書き方のメリットは実行した時点でhtmlに存在していない要素、
+招待追加される要素にもイベント処理を登録しておける点です
+*/
+
+$(function() {
+    $("a").on("click", function() {
+        $("img").attr("src", $(this).attr("href"))
+        .attr("alt", $(this).text());
+        return false;
+    });
+
+    $("button").click(function () { 
+        $("ul").append("<li><a href='images/building.jpg'> 建物</a></li>");
     });
 });
