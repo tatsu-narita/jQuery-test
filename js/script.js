@@ -981,7 +981,6 @@ ul要素内のa要素がクリックsれたときにimg要素のsrc属性とalt�
 
 この書き方のメリットは実行した時点でhtmlに存在していない要素、
 招待追加される要素にもイベント処理を登録しておける点です
-*/
 
 $(function() {
     $("a").on("click", function() {
@@ -992,5 +991,51 @@ $(function() {
 
     $("button").click(function () { 
         $("ul").append("<li><a href='images/building.jpg'> 建物</a></li>");
+    });
+});
+
+これは
+1.a要素がクリックされると画像を切り替える処理
+2.button要素がクリックされるとul要素に対して新しいli要素を追加する処理
+2つが設定されている
+
+またhtmlが読み込まれた段階では存在していない建物にもイベント処理を適用できる
+
+$(function() {
+    $("ul").on("click","a", function() {
+        $("img").attr("src", $(this).attr("href"))
+        .attr("alt", $(this).text());
+        return false;
+    });
+
+    $("button").click(function () { 
+        $("ul").append("<li><a href='images/building.jpg'> 建物</a></li>");
+    });
+});
+
+これはon()がセレクターで指定したul要素の内側にある要素が
+クリックされたタイミングで、その要素がイベント発生する要素かを判断しているから
+*/
+
+//設定されているイベント処理を取り消すoff()
+/*
+これは設定されているイベント処理を取り消す命令です
+
+a要素がクリックされるとimg要素を書き換える処理が設定されている
+ただし取り消しと書かれたbutton要素がクリックされると
+off()でa要素のイベントを取り消します
+a要素はbutton要素がクリックされる前は画像切り替えとして機能し
+button要素がクリックされた後はaつおそによるリンクに戻る
+*/
+
+$(function() {
+    $("a").click(function() {
+        $("img").attr("src", $(this).attr("href"))
+        .attr("alt", $(this).text());
+        return false;
+    });
+
+    $("button").click(function() { 
+        $("a").off("click");
     });
 });
