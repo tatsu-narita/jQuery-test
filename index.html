@@ -361,6 +361,7 @@
     </ul>
     -->
 
+    <!--
     <ul>
         申込者:
         <select>
@@ -368,6 +369,23 @@
             <option value=" 会社名"> 法人</option>
         </select>
         <p><span>お名前</span><input type="text"></p>
+    </ul>
+    -->
+
+    <ul>
+        <form action="check.html" method="post">
+            <dl>
+                <dt> お名前<em>( 必須)</em></dt>
+                <dd><input type="text" name="name"></dd>
+                <dt> 性別</dt>
+                <dd>
+                    <input type="radio" name="gender" value=" 男性" id="gender_man">
+                    <label for="gender_man">男性</label>
+                    <input type="radio" name="gender" value="女性" id="gender_woman">
+                    <label for="gender_woman">女性</label>
+                </dd>
+            </dl>
+        </form>
     </ul>
 
 </body>
