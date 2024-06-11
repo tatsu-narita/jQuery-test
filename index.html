@@ -380,11 +380,37 @@
                 <dt> 性別</dt>
                 <dd>
                     <input type="radio" name="gender" value=" 男性" id="gender_man">
-                    <label for="gender_man">男性</label>
+                    <label for="gender_man"> 男性</label>
                     <input type="radio" name="gender" value="女性" id="gender_woman">
-                    <label for="gender_woman">女性</label>
+                    <label for="gender_woman"> 女性</label>
+                </dd>
+                <dt> 年齢</dt>
+                <dd>
+                    <select name="age">
+                        <option> 選択してください</option>
+                        <option value="10 代">10 代</option>
+                        <option value="20 代">20 代</option>
+                        <option value="30 代">30 代</option>
+                        <option value="40 代以上">40 代以上</option>
+                    </select>
+                </dd>
+                <dt> スキル</dt>
+                <dd>
+                    <input type="checkbox" name="html" value="XHTML" id="html">
+                    <label for="html">HTML</label>
+                    <input type="checkbox" name="css" value="CSS" id="css">
+                    <label for="css">CSS</label>
+                    <input type="checkbox" name="javascript" value="JavaScript" id="javascript">
+                    <label for="javascript">JavaScript</label>
+                    <input type="checkbox" name="php" value="PHP" id="php">
+                    <label for="php">PHP</label>
+                </dd>
+                <dt>コメント</dt>
+                <dd>
+                    <textarea name="comment"></textarea>
                 </dd>
             </dl>
+            <input type="submit" value=" 送信">
         </form>
     </ul>
 
