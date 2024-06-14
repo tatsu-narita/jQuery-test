@@ -1224,6 +1224,7 @@ $(function() {
 html/cssを操作する命令は一度だけ実行するように改良したのが以下です
 */
 
+/*
 $(function() {
     $("form").submit(function () { 
         if($("input[name='name']").val()==""){
@@ -1238,6 +1239,7 @@ $(function() {
         }
     });
 });
+*/
 
 /*
 このスクリプトでは、二つのif文を利用しています。
@@ -1247,3 +1249,28 @@ $(function() {
 font-weightプロパティをboldに変更していました。
 ここではfont-weightの値を調べてboldではない場合のみspan要素を追加する
 */
+
+//3.フォーム部品を選択するセレクター
+
+//チェックの入っているフォーム部品を選択する:checked
+
+/*
+$(function() {
+    $("label,input[type='checkbox']").click(function () { 
+        $("label").css("background","");
+        $(":checked").each( function () {
+            $("label[for='"+$(this).attr("id")+"']").css("background","#CCC");
+        });
+    });
+});
+*/
+
+//選択されている要素を選択する:selected
+
+$(function() {
+    $("select").change(function () { 
+        e.preventDefault();
+        
+    });
+
+});
