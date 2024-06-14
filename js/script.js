@@ -1269,8 +1269,10 @@ $(function() {
 
 $(function() {
     $("select").change(function () { 
-        e.preventDefault();
-        
+        if($(":selected").attr("value")=="10 代") {
+            $("input").attr("disabled", "disabled");
+        }else{
+            $("input").removeAttr("disabled");
+        }
     });
-
 });
