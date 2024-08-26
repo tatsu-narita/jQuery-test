@@ -1,10 +1,12 @@
 # jQuery-test
 
 ## 概要
+
 jqueryの技術習得と学び直し。
 テスト用ノートとして活用
 
 ## 項目
+
 1.cssでよく利用されるセレクター
 ・要素セレクター
 ・IDセレクター
@@ -24,4 +26,8 @@ jqueryの技術習得と学び直し。
 ・empty擬似クラス
 ・nth-child擬似クラス
 ・last-child擬似クラス
-
+・only-child擬似クラス
+・nth-last-child擬似クラス
+・nth-last-of-type擬似クラス
+・first-of-type擬似クラス
+・last-of-type擬似クラス
