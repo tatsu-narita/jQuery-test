@@ -31,3 +31,7 @@ jqueryの技術習得と学び直し。
 ・nth-last-of-type擬似クラス
 ・first-of-type擬似クラス
 ・last-of-type擬似クラス
+・only-of-type擬似クラス
+・lang擬似クラス
+
+4.CSSの属性セレクター
