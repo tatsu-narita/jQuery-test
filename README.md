@@ -38,3 +38,7 @@ jqueryの技術習得と学び直し。
 ・lang擬似クラス
 
 ### 4.CSSの属性セレクター
+
+[attribute]
+[attribute='value']
+[attribute!='value']
