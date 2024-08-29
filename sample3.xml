@@ -9,14 +9,21 @@
             <pudDate>Fri, 09 Nov 2012 11:44:06 +0900</pudDate>
             <link>http://blog.webcreativepark.net/2012/11/09-114406.html</link>
             <description><![CDATA[Compass で (中略) 少しおかしくなります。]]></description>
-
         </item>
+
         <item>
         <title>jQuery1.8 系のanimete() で一部の Android端末が落ちる件</title>
         <pudDate>wed, 07 Nov 2012 11:26:17 +0900</pudDate>
         <link>http://blog.webcreativepark.net/2012/11/07-112617.html</link>
         <description><![CDATA[jQuery1.8 で (中略) 発生します。]]></description>
         </item>
-        
+
+        <item>
+        <title>iOS6 で transtion アニメーションが少し遅れて開始する問題</title>
+        <pubDate>Fri, 19 Oct 2012 16:14:32 +0900</pubDate>
+        <link>http://blog.webcreativepark.net/2012/10/19-161432.html</link>
+        <description></description>
+        </item>
+
     </channel>
 </rss>
