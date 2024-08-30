@@ -42,3 +42,6 @@ jqueryの技術習得と学び直し。
 [attribute]
 [attribute='value']
 [attribute!='value']
+[attribute^='value']
+[attribute$='value']
+[attribute*='value']
