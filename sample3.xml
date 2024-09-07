@@ -25,5 +25,22 @@
         <description><![CDATA[よくあるスワイプ(中略) ぶつかりました。]]></description>
         </item>
 
+        <dl>
+            <dt><a>http://blog.webcreativepark.net/2012/11/09-114406.html
+            Compass で CSS Sprite する際にスプライト画像間のマージンを撮る方法
+            </a></dt>
+            <dd>Compass で (中略) 少しおかしくなります。</dd>
+
+            <dt><a>http://blog.webcreativepark.net/2012/11/07-112617.html
+            jQuery1.8 系のanimete() で一部の Android端末が落ちる件
+            </a></dt>
+            <dd>jQuery1.8 で (中略) 発生します。</dd>
+
+            <dt><a>http://blog.webcreativepark.net/2012/10/19-161432.html
+            iOS6 で transtion アニメーションが少し遅れて開始する問題
+            </a></dt>
+            <dd>よくあるスワイプ(中略) ぶつかりました。</dd>
+        </dl>
+
     </channel>
 </rss>
