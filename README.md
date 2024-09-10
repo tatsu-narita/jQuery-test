@@ -79,5 +79,9 @@ evenセレクター/oddセレクター
 
 eqセレクター/ltセレクター/gtセレクター
 
+headerセレクター
+
+containsセレクター/hasセレクター
+
 
 
