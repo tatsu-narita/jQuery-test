@@ -1,5 +1,21 @@
+
+/* sample-1 */
+/*
 $(function(){
     $("button").click(function() { 
-        $("div").show("show");
+        $("div").show(1000);
+        $("div").css("display", "block");
+    });
+});
+*/
+
+/* sample-2 */
+// show()にコールバック関数を設定
+
+$(function(){
+    $("button").click(function() { 
+        $("div").show("show", function() {
+            $(this).css("background","blue");
+        });
     });
 });
