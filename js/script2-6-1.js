@@ -25,9 +25,10 @@ $(function(){
 // 表示中の要素を非表示にする hide()
 
 $(function(){
-    $("button").click(function() { 
-        $("div").show("show", function() {
-            $(this).css("background","blue");
-        });
+    $("button#show").click(function() { 
+        $("div").show("slow");
+    })
+    $("button#hide").click(function () { 
+        $("div").hide("slow");
     });
 });
