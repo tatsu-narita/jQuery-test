@@ -23,12 +23,23 @@ $(function(){
 
 /* sample-3 */
 // 表示中の要素を非表示にする hide()
-
+/*
 $(function(){
     $("button#show").click(function() { 
         $("div").show("slow");
     })
     $("button#hide").click(function () { 
         $("div").hide("slow");
+    });
+});
+*/
+
+
+$(function(){
+    $("button#show").click(function() { 
+        $("div:not(:animated)").show("slow");
+    });
+    $("button#hide").click(function () { 
+        $("div:not(animated)").hide("slow");
     });
 });
