@@ -34,12 +34,21 @@ $(function(){
 });
 */
 
-
+/*
 $(function(){
     $("button#show").click(function() { 
         $("div:not(:animated)").show("slow");
     });
     $("button#hide").click(function () { 
         $("div:not(animated)").hide("slow");
+    });
+});
+*/
+
+//要素の表示・非表示を交互に切り替える toggle()
+
+$(function(){
+    $("button").click(function () { 
+        $("div:not(:animated)").toggle("slow");
     });
 });
