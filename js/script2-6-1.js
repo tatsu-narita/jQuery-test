@@ -46,9 +46,22 @@ $(function(){
 */
 
 //要素の表示・非表示を交互に切り替える toggle()
-
+/*
 $(function(){
     $("button").click(function () { 
         $("div:not(:animated)").toggle("slow");
+    });
+});
+*/
+
+//表示・非表示をスライドで切り替え slideDown()/slideUp()
+
+$(function(){
+    $("dt").click(function () { 
+        if($("dd").css("display")=="block") {
+            $("dd:not(:animated)").slideUp("slow");
+        }else{
+            $("dd").slideDown("slow");
+        }
     });
 });
