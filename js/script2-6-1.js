@@ -55,7 +55,7 @@ $(function(){
 */
 
 //表示・非表示をスライドで切り替え slideDown()/slideUp()
-
+/*
 $(function(){
     $("dt").click(function () { 
         if($("dd").css("display")=="block") {
@@ -63,5 +63,14 @@ $(function(){
         }else{
             $("dd").slideDown("slow");
         }
+    });
+});
+*/
+
+//表示・非表示をスライドで交互に切り替える slideToggle()
+
+$(function(){
+    $("dt").click(function () { 
+        $("dd:not(:animated)").slideToggle("slow");
     });
 });
