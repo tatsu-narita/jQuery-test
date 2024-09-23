@@ -68,9 +68,21 @@ $(function(){
 */
 
 //表示・非表示をスライドで交互に切り替える slideToggle()
-
+/*
 $(function(){
     $("dt").click(function () { 
         $("dd:not(:animated)").slideToggle("slow");
+    });
+});
+*/
+
+//表示状態をフェードイン・フェードアウトで切り替える fadeIn()/fadeOut()
+
+$(function() {
+    $("button#fadeIn").click(function () { 
+        $("img:not(:animated)").fadeIn("slow");
+    });
+    $("button#fadeOut").click(function () { 
+        $("img:not(:animated)").fadeOut("slow");
     });
 });
