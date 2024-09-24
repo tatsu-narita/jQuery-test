@@ -77,12 +77,29 @@ $(function(){
 */
 
 //表示状態をフェードイン・フェードアウトで切り替える fadeIn()/fadeOut()
-
+/*
 $(function() {
     $("button#fadeIn").click(function () { 
         $("img:not(:animated)").fadeIn("slow");
     });
     $("button#fadeOut").click(function () { 
         $("img:not(:animated)").fadeOut("slow");
+    });
+});
+*/
+
+//透明度を徐々に変更する fadeTo()
+
+$(function() {
+    $("button#fade100").click(function () { 
+        $("img:not(:animated)").fadeTo("slow", 1);
+    });
+
+    $("button#fade50").click(function () { 
+        $("img:not(:animated)").fadeTo("slow", 0.5);
+    });
+
+    $("button#fade0").click(function () { 
+        $("img:not(animated)").fadeTo("slow", 0);
     });
 });
