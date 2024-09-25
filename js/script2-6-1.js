@@ -89,7 +89,7 @@ $(function() {
 */
 
 //透明度を徐々に変更する fadeTo()
-
+/*
 $(function() {
     $("button#fade100").click(function () { 
         $("img:not(:animated)").fadeTo("slow", 1);
@@ -101,5 +101,21 @@ $(function() {
 
     $("button#fade0").click(function () { 
         $("img:not(animated)").fadeTo("slow", 0);
+    });
+});
+*/
+
+//独自のアニメーションを設定 animate()
+
+$(function(){
+    $("#flower").click(function () { 
+        $("p:not(:animated)").animate({
+            "margin-left" : "-400px"
+        },"slow","swing");
+    });
+    $("#building").click(function () { 
+        $("p:not(:animated)").animate({
+            "margin-left" : "0"
+        },"slow","swing");
     });
 });
