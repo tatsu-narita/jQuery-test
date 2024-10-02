@@ -22,6 +22,7 @@ th,td{
 }
 */
 
+/*
 table{
     margin: 100px auto;
 }
@@ -42,4 +43,13 @@ th.odd{
 th, td{
     padding: 5px;
     font-size: small;
+}
+*/
+
+table{
+    margin: 100px auto;
+}
+
+.odd{
+    background: #444444;
 }
