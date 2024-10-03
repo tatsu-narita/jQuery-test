@@ -53,3 +53,13 @@ table{
 .odd{
     background: #444444;
 }
+
+th{
+    background: #222222;
+    color: white;
+}
+
+th,td{
+    padding: 5px;
+    font-size: small;
+}
