@@ -63,3 +63,7 @@ th,td{
     padding: 5px;
     font-size: small;
 }
+
+.even{
+    background: #f2f2f2;
+}
