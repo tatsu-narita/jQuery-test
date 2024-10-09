@@ -67,3 +67,11 @@ th,td{
 .even{
     background: #f2f2f2;
 }
+
+tr:not(:first-child):hover{
+    background: #B2D8FF;
+}
+
+.hover{
+    background: #B2D8FF;
+}
