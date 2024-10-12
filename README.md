@@ -163,7 +163,7 @@ click()の基本の書き方
 
 ダブルクリックイベントを感知するdblclick()
 
+マウスのボタン操作を感知するmousedown()/mouseup()
 
-
-
+マウスオーバー/マウスアウトmouseover()/mouseout()
 
