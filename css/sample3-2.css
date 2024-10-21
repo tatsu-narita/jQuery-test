@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    background: black;
+}
+
+#container{
+    width: 1000px;
+    margin: 20px auto;
+}
+
+#navi{
+    width: 300px;
+    float: left;
+}
+
+#navi ul{
+    height: 460px;
+    list-style-type: none;
+}
