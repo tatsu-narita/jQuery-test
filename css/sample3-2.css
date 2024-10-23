@@ -22,3 +22,13 @@ body{
     height: 460px;
     list-style-type: none;
 }
+
+#navi ul li{
+    list-style-type: none;
+    width: 150px;
+    float: left;
+}
+
+#navi ul li img{
+    border: 3px solid white;
+}
