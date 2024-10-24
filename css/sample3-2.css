@@ -32,3 +32,9 @@ body{
 #navi ul li img{
     border: 3px solid white;
 }
+
+#main{
+    width: 650px;
+    float: right;
+}
+
