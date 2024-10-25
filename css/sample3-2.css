@@ -38,3 +38,6 @@ body{
     float: right;
 }
 
+#main img{
+    border: 3px solid white;
+}
