@@ -7,6 +7,7 @@ $(function(){
 });
 */
 
+/*
 $(function(){
     $("navi a").click(function () { 
         $("#main img").before("<img src="+$(this).attr("href")+"' alt=>'");
@@ -16,6 +17,7 @@ $(function(){
         return false;
     });
 });
+*/
 
 //スライド式ギャラリー
 
