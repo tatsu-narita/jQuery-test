@@ -39,5 +39,6 @@ body{
 }
 
 #main img{
+    position: absolute;
     border: 3px solid white;
 }
