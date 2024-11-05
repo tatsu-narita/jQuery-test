@@ -165,5 +165,5 @@ click()の基本の書き方
 
 マウスのボタン操作を感知するmousedown()/mouseup()
 
-マウスオーバー/マウスアウトmouseover()/mouseout()
+マウスオーバー/マウスアウトを感知するmouseover()/mouseout()
 
