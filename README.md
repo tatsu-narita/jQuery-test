@@ -167,3 +167,4 @@ click()の基本の書き方
 
 マウスオーバー/マウスアウトを感知するmouseover()/mouseout()
 
+マウスの動きに合わせて処理を実行するmousemove()
