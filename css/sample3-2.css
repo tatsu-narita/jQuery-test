@@ -49,3 +49,12 @@ body{
 #navi{
     overflow: hidden;
 }
+
+#navi .pageWrap{
+    width: 900px;
+}
+
+#navi .pageWrap .page{
+    width: 300px;
+    float: left;
+}
