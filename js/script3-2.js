@@ -20,4 +20,13 @@ $(function(){
 */
 
 //スライド式ギャラリー
-
+$("img.next").click(function () { 
+    $("#navi .pageWrap").animate({
+        "margin-left" : parseInt($("#navi .pageWrap").css("margin-left"))-300+"px"
+    },"fast");
+});
+$("img.prev").click(function () { 
+    $("#navi .pageWrap").animate({
+        "margin-left" : parseInt($("#navi .pageWrap").css("margin-left"))+300+"px"
+    },"fast");
+});
