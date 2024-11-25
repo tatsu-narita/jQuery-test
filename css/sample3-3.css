@@ -2,3 +2,9 @@ dl{
     width: 800px;
     margin: 50px auto;
 }
+
+dt{
+    line-height: 35px;
+    font-size: large;
+    text-indent: 3rem;
+}
