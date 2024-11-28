@@ -9,4 +9,6 @@ dt{
     text-indent: 3rem;
     font-weight: bold;
     color: white;
+    height: 35px;
+    background: #345;
 }
