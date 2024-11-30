@@ -16,4 +16,9 @@ dt{
 dd{
     margin: 0;
     height: 300px;
+    background: #9844;
+}
+
+dd p{
+    margin: 0;
 }
