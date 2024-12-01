@@ -21,4 +21,6 @@ dd{
 
 dd p{
     margin: 0;
+    text-indent: 1em;
+    padding: 20px;
 }
