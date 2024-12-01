@@ -1,4 +1,5 @@
 
+/*
 $(function(){
     $("dd:not(:first)").css("display", "none");
     $("dl dt").click(function () { 
@@ -8,9 +9,9 @@ $(function(){
         }
     });
 });
+*/
 
-/*
+
 $(function(){
 
 });
-*/
