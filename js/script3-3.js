@@ -13,5 +13,5 @@ $(function(){
 
 
 $(function(){
-
+    $("dd:not(:first)").css("display","none");
 });
