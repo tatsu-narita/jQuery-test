@@ -14,4 +14,5 @@ $(function(){
 
 $(function(){
     $("dd:not(:first)").css("display","none");
+    $("dt:first").addClass("selected");
 });
