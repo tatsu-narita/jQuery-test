@@ -19,6 +19,8 @@ $(function(){
         if($("+dd", this).css("display")=="none"){
             $("dd").slideUp("slow");
             $("+dd", this).slideDown("slow");
+            $("dt.selected").removeClass("selected");
+            $(this).addClass("selected");
         }
     });
 });
