@@ -34,5 +34,6 @@ dt.over{
 
 dt.selected{
     background: bisque;
+    cursor: default;
 }
 
