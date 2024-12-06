@@ -22,5 +22,9 @@ $(function(){
             $("dt.selected").removeClass("selected");
             $(this).addClass("selected");
         }
+    }).mouseover(function () { 
+        $(this).addClass("over");
+    }).mouseout(function(){
+        $(this).removeClass("over");
     });
 });
