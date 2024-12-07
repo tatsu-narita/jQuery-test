@@ -1,4 +1,4 @@
-
+/*
 dl{
     width: 800px;
     margin: 50px auto;
@@ -37,4 +37,8 @@ dt.selected{
     cursor: default;
     color: black;
 }
+*/
 
+div{
+    width: 800px;
+}
