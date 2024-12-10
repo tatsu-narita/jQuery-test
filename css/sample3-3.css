@@ -50,3 +50,9 @@ dl{
     width: 900px;
     height: 300px;
 }
+
+dt{
+    width: 35px;
+    height: 300px;
+    float: left;
+}
