@@ -63,3 +63,11 @@ dt span{
     height: 100%;
     text-indent: -9999px;
 }
+
+dt span.over{
+    cursor: pointer;
+}
+
+dt span.selected{
+    cursor: default;
+}
