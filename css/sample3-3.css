@@ -71,3 +71,7 @@ dt span.over{
 dt span.selected{
     cursor: default;
 }
+
+dt#step1 span{
+    background: #343;
+}
