@@ -75,3 +75,11 @@ dt span.selected{
 dt#step1 span{
     background: #343;
 }
+
+dt#step1 span.over{
+    background: #367;
+}
+
+dt#step1 span.selected{
+    background: bisque;
+}
