@@ -32,9 +32,9 @@ $(function(){
 
 $(function(){
     $("dd:not(:first)").css("width","0px");
-    $("dt:first").addClass("selected");
+    $("dt:first span").addClass("selected");
     $("dl dt").click(function () { 
-        if($("+dd", this).css("display")=="none"){
+        if($("+dd", this).css("width")=="0px"){
             $("dd").slideUp("slow");
             $("+dd", this).slideDown("slow");
             $("dt.selected").removeClass("selected");
