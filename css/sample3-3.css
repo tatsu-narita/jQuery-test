@@ -95,3 +95,15 @@ dt#step2 span.over{
 dt#step2 span.selected{
     background: bisque;
 }
+
+dt#step3 span{
+    background: #343;
+}
+
+dt#step3 span.over{
+    background: #367;
+}
+
+dt#step3 span.selected{
+    background: bisque;
+}
