@@ -107,3 +107,7 @@ dt#step3 span.over{
 dt#step3 span.selected{
     background: bisque;
 }
+
+dd{
+    margin: 0;
+}
