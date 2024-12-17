@@ -35,7 +35,7 @@ $(function(){
     $("dt:first span").addClass("selected");
     $("dl dt").click(function () { 
         if($("+dd", this).css("width")=="0px"){
-            $("dd").slideUp("slow");
+            $("dt:has(.selected) ++dd").animate({"width":"0px"});
             $("+dd", this).slideDown("slow");
             $("dt.selected").removeClass("selected");
             $(this).addClass("selected");
