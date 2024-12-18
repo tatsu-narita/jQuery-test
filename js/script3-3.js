@@ -36,8 +36,8 @@ $(function(){
     $("dl dt").click(function () { 
         if($("+dd", this).css("width")=="0px"){
             $("dt:has(.selected) ++dd").animate({"width":"0px"});
-            $("+dd", this).slideDown("slow");
-            $("dt.selected").removeClass("selected");
+            $("+dd", this).animate({"width":"695px"});
+            $("dt span.selected").removeClass("selected");
             $(this).addClass("selected");
         }
     }).mouseover(function () { 
