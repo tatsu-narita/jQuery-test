@@ -38,7 +38,7 @@ $(function(){
             $("dt:has(.selected) ++dd").animate({"width":"0px"});
             $("+dd", this).animate({"width":"695px"});
             $("dt span.selected").removeClass("selected");
-            $(this).addClass("selected");
+            $("span",this).addClass("over");
         }
     }).mouseover(function () { 
         $(this).addClass("over");
