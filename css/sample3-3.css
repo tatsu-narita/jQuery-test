@@ -112,4 +112,7 @@ dd{
     margin: 0;
     width: 695px;
     height: 300px;
+    float: left;
+    background: #D4D0C8;
+    overflow: hidden;
 }
