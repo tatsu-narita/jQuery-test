@@ -35,14 +35,14 @@ $(function(){
     $("dt:first span").addClass("selected");
     $("dl dt").click(function () { 
         if($("+dd", this).css("width")=="0px"){
-            $("dt:has(.selected) ++dd").animate({"width":"0px"});
+            $("dt:has(.selected) +dd").animate({"width":"0px"});
             $("+dd", this).animate({"width":"695px"});
             $("dt span.selected").removeClass("selected");
-            $("span",this).addClass("over");
+            $("span", this).addClass("selected");
         }
     }).mouseover(function () { 
-        $(this).addClass("over");
+        $("span",this).addClass("over");
     }).mouseout(function(){
-        $(this).removeClass("over");
+        $("span",this).removeClass("over");
     });
 });
