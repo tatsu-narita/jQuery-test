@@ -72,40 +72,40 @@ dt span.selected{
     cursor: default;
 }
 
-dt#step1 span{
+dt #step1 span{
     background: #343;
 }
 
-dt#step1 span.over{
+dt #step1 span.over{
     background: #367;
 }
 
-dt#step1 span.selected{
-    background: bisque;
+dt #step1 span.selected{
+    background: rgb(196, 227, 255);
 }
 
-dt#step2 span{
+dt #step2 span{
     background: #343;
 }
 
-dt#step2 span.over{
+dt #step2 span.over{
     background: #367;
 }
 
-dt#step2 span.selected{
-    background: bisque;
+dt #step2 span.selected{
+    background: rgb(105, 11, 212);
 }
 
-dt#step3 span{
+dt #step3 span{
     background: #343;
 }
 
-dt#step3 span.over{
+dt #step3 span.over{
     background: #367;
 }
 
-dt#step3 span.selected{
-    background: bisque;
+dt #step3 span.selected{
+    background: rgb(117, 11, 99);
 }
 
 dd{
@@ -115,4 +115,11 @@ dd{
     float: left;
     background: #D4D0C8;
     overflow: hidden;
+}
+
+dd p{
+    width: 695px;
+    text-indent: 1em;
+    padding: 20px;
+    margin: 0;
 }
