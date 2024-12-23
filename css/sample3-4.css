@@ -6,3 +6,8 @@
 ul.tab{
     padding: 0;
 }
+
+ul.tab li{
+    list-style-type: none;
+    width: 100px;
+}
