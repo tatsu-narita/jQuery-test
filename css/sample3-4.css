@@ -16,4 +16,7 @@ ul.tab li{
 
 ul.tab li a{
     outline: none;
+    background: #5633;
+    display: block;
+    color: blue;
 }
