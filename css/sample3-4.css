@@ -19,4 +19,10 @@ ul.tab li a{
     background: #5633;
     display: block;
     color: blue;
+    line-height: 40px;
+    text-align: center;
+}
+
+ul.tab li a.selected{
+    background: #7889;
 }
