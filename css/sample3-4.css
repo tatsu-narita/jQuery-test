@@ -25,4 +25,7 @@ ul.tab li a{
 
 ul.tab li a.selected{
     background: #7889;
+    text-decoration: none;
+    color: #333;
+    cursor: default;
 }
