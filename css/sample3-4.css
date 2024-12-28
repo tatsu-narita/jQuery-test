@@ -29,3 +29,10 @@ ul.tab li a.selected{
     color: #333;
     cursor: default;
 }
+
+ul.panel{
+    clear: both;
+    border: 1px solid #9fb7d4;
+    border-top: none;
+    padding: 0;
+}
