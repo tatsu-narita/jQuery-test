@@ -36,3 +36,7 @@ ul.panel{
     border-top: none;
     padding: 0;
 }
+
+ul.panel li{
+    list-style-type: none;
+}
