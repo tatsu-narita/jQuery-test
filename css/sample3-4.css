@@ -39,4 +39,7 @@ ul.panel{
 
 ul.panel li{
     list-style-type: none;
+    padding: 10px;
+    text-indent: 1em;
+    color: #333;
 }
