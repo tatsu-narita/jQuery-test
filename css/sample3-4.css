@@ -43,3 +43,7 @@ ul.panel li{
     text-indent: 1em;
     color: #333;
 }
+
+p.panel{
+    clear: both;
+}
