@@ -47,4 +47,6 @@ ul.panel li{
 p.panel{
     clear: both;
     border: 1px solid #9fb7d4;
+    border-top: none;
+    
 }
