@@ -16,5 +16,6 @@ $(function() {
         $("ul.tab li a.selected").removeClass("selected");
         $(this).addClass("selected");
         $("p.panel").load($(this).after("href"));
+        return false;
     });
 });
