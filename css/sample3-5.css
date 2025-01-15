@@ -3,4 +3,5 @@ span.tooltip{
     color: white;
     width: 200px;
     background: #ff9900;
+    border: 2px solid white;
 }
