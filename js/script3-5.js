@@ -6,5 +6,11 @@ $(function(){
     });
     $("a").mouseover(function () { 
         $("span.tooltip").fadeIn();
+    }).mouseout(function () {
+        $("span.tooltip").fadeOut();
+    }).mousemove(function () { 
+        $("span.tooltip").css({
+            
+        });
     });
 });
