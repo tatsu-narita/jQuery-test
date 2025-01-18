@@ -8,9 +8,9 @@ $(function(){
         $("span.tooltip").fadeIn();
     }).mouseout(function () {
         $("span.tooltip").fadeOut();
-    }).mousemove(function () { 
+    }).mousemove(function (e) { 
         $("span.tooltip").css({
-            
+            "top":e.pageY+10+"px",
         });
     });
 });
