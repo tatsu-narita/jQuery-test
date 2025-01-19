@@ -11,6 +11,7 @@ $(function(){
     }).mousemove(function (e) { 
         $("span.tooltip").css({
             "top":e.pageY+10+"px",
+            "left":e.pageX+10+"px"
         });
     });
 });
