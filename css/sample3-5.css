@@ -5,4 +5,5 @@ span.tooltip{
     background: #ff9900;
     border: 2px solid white;
     padding: 1em;
+    font-size: small;
 }
