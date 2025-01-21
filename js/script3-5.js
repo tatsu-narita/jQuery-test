@@ -1,3 +1,4 @@
+/*
 $(function(){
     $("span.tooltip").css({
         opacity:"0.9",
@@ -14,4 +15,9 @@ $(function(){
             "left":e.pageX+10+"px"
         });
     });
+});
+*/
+
+$(function(){
+    $("div.tooltip").css(propertyName);
 });
