@@ -19,5 +19,9 @@ $(function(){
 */
 
 $(function(){
-    $("div.tooltip").css(propertyName);
+    $("div.tooltip").css("opacity", "0.9").hide();
+    $("a").mouseover(function () { 
+        
+    });
+
 });
