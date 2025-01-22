@@ -12,4 +12,9 @@ span.tooltip{
 
 div.tooltip{
     width: 230px;
+    position: absolute;
+}
+
+div.tooltip p{
+    line-height: 1.5;
 }
