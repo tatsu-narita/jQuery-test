@@ -22,3 +22,7 @@ div.tooltip p{
     background: url("images/photo2.jpg") top right;
     padding: 10px 5px 0 40px;
 }
+
+div.tooltip img{
+    vertical-align: top;
+}
