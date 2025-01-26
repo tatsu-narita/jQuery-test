@@ -25,5 +25,7 @@ $(function(){
             "top":$(this).offset().top-20+"px",
             "left":$(this).offset().left+$(this).width()+"px"
         });
+    }).mouseout(function(){
+        $("div.tooltip").fadeOut();
     });
 });
