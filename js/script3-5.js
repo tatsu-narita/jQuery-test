@@ -18,6 +18,7 @@ $(function(){
 });
 */
 
+/*
 $(function(){
     $("div.tooltip").css("opacity", "0.9").hide();
     $("a").mouseover(function () { 
@@ -28,4 +29,9 @@ $(function(){
     }).mouseout(function(){
         $("div.tooltip").fadeOut();
     });
+});
+*/
+
+$(function(){
+    $("p.tooltip").hide();
 });
