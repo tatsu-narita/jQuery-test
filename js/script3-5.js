@@ -34,4 +34,9 @@ $(function(){
 
 $(function(){
     $("p.tooltip").hide();
+    $("a").mouseover(function () { 
+        $("p.tooltip").show().css({
+            
+        });
+    });
 });
