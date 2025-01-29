@@ -31,4 +31,6 @@ div.tooltip img{
 
 p.tooltip{
     margin: 0;
+    width: 185px;
+    height: 86px;
 }
