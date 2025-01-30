@@ -33,4 +33,6 @@ p.tooltip{
     margin: 0;
     width: 185px;
     height: 86px;
+    position: absolute;
+    padding: 10px 20px 20px 10px;
 }
