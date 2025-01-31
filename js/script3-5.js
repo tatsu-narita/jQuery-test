@@ -37,8 +37,7 @@ $(function(){
     $("a").mouseover(function () { 
         $("p.tooltip").show().css({
             "top":$(this).offset().top-20+"px",
-            
-            
+            "left":$(this).offset().left+$(this).width()+10+"px"
         });
     });
 });
