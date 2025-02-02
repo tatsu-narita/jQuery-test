@@ -38,3 +38,7 @@ p.tooltip{
     background: url("images/photo2");
     font-size: small;
 }
+
+* html p.tooltip{
+    background: none;
+}
