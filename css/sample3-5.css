@@ -41,4 +41,5 @@ p.tooltip{
 
 * html p.tooltip{
     background: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/photo2',sizingMethod='scale');
 }
