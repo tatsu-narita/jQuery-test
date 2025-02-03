@@ -40,6 +40,8 @@ $(function(){
             "left":$(this).offset().left+$(this).width()+10+"px"
         });
     }).mouseout(function () { 
-        
+        setTimuout(function(){
+            $("p.tooltip").hide();
+        },3000);
     });
 });
