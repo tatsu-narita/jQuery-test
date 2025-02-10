@@ -16,4 +16,10 @@ $(function(){
     }).mouseout(function () { 
         $(this).attr("src", "images/css.png");
     });
+
+    $("img[src='images/html.png']").mouseover(function () { 
+        $(this).attr("src", "images/html_on.png");
+    }).mouseout(function () { 
+        $(this).attr("src", "images/html.png");
+    });
 });
