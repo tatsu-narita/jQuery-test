@@ -1,3 +1,4 @@
+/*
 $(function(){
     $("img[src='images/jquery.png']").mouseover(function () { 
         $(this).attr("src","images/jquery_on.png");
@@ -21,5 +22,12 @@ $(function(){
         $(this).attr("src", "images/html_on.png");
     }).mouseout(function () { 
         $(this).attr("src", "images/html.png");
+    });
+});
+*/
+
+$(function() {
+    $("img.rollover").mouseover(function () { 
+        $(this).attr();
     });
 });
