@@ -28,6 +28,8 @@ $(function(){
 
 $(function() {
     $("img.rollover").mouseover(function () { 
-        $(this).attr();
+        $(this).attr("src", $(this).attr("src").replaceAll(/^(.+)(¥.[a-z]+)$/,"$1_on$2"));
+    }).mouseout(function () { 
+        $(this).attr("src", $(this).attr("src").replaceAll(/^(.+)(¥.[a-z]+)$/,"$1$2"));
     });
 });
