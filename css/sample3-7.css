@@ -1,4 +1,7 @@
 ul.menu li{
     float: left;
     width: 179px;
+    height: 48px;
+    background: url("images/css.png");
+    position: relative;
 }
