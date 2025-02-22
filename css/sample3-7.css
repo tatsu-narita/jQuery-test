@@ -2,7 +2,7 @@ ul.menu li{
     float: left;
     width: 179px;
     height: 48px;
-    background: url("images/css.png");
+    background-color: aqua;
     position: relative;
 }
 
@@ -13,5 +13,9 @@ ul.menu li a{
     line-height: 48%;
     text-indent: 30px;
     font-weight: bold;
-    
+    text-decoration: none;
+}
+
+ul.menu li a :hover{
+    background-color: crimson;
 }
