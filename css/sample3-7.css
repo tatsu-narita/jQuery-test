@@ -19,3 +19,16 @@ ul.menu li a{
 ul.menu li a :hover{
     background-color: crimson;
 }
+
+ul.menu li ul.sub{
+    position: absolute;
+}
+
+ul.menu{
+    zoom: 1;
+}
+
+ul.menu::after{
+    height: 0;
+    
+}
