@@ -1,3 +1,4 @@
+/*
 ul.menu li{
     float: left;
     width: 179px;
@@ -34,4 +35,10 @@ ul.menu::after{
     content: ".";
     display: block;
     clear: both;
+}
+*/
+
+ul.menu li{
+    float: left;
+
 }
