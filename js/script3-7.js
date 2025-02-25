@@ -1,3 +1,4 @@
+/*
 $(function() {
     $("ul.sub").hide();
     $("ul.menu li").hover(function () {
@@ -8,4 +9,9 @@ $(function() {
             // out
         $("ul", this).slideUp("fast");
     });
+});
+*/
+
+$(function() {
+    
 });
