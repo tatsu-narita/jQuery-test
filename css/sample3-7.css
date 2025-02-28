@@ -40,5 +40,8 @@ ul.menu::after{
 
 ul.menu li{
     float: left;
-
+    width: 179px;
+    height: 48px;
+    background-color: aquamarine;
+    position: relative;
 }
