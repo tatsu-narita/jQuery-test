@@ -45,3 +45,12 @@ ul.menu li{
     background-color: aquamarine;
     position: relative;
 }
+
+ul.menu li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 48px;
+    text-indent: 30px;
+    font-weight: bold;
+}
