@@ -53,4 +53,11 @@ ul.menu li a{
     line-height: 48px;
     text-indent: 30px;
     font-weight: bold;
+    color: #cfdfb5;
+    text-decoration: none;
+    position: relative;
+}
+
+ul.menu li a:hover{
+    background: #366;
 }
