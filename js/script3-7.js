@@ -13,5 +13,11 @@ $(function() {
 */
 
 $(function() {
-    
+    $("ul.menu li").hover(function () {
+            // over
+            
+        }, function () {
+            // out
+        }
+    );
 });
