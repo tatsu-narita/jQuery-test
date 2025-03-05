@@ -71,3 +71,11 @@ ul.sub li ul.sub{
     left: 179px;
     top: 0;
 }
+
+ul.menu{
+    zoom: 1;
+}
+
+ul.menu:after{
+    height: 0;
+}
