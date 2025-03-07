@@ -78,4 +78,7 @@ ul.menu{
 
 ul.menu:after{
     height: 0;
+    visibility: hidden;
+    content: ".";
+    display: block;
 }
