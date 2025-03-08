@@ -81,4 +81,19 @@ ul.menu:after{
     visibility: hidden;
     content: ".";
     display: block;
+    clear: both;
+}
+
+ul.sub{
+    display: none;
+}
+
+*+html ul.menu li{
+    display: inline;
+    zoom: 1;
+}
+
+*+html ul.sub{
+    zoom: 1;
+    position: relative;
 }
