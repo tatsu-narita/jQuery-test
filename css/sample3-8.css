@@ -10,4 +10,11 @@ html,body{
     left: 0;
     height: 100%;
     width: 100%;
+    background: black;
+    opacity: 0.60;
+    filter: alpha(opacity=60);
+}
+
+#overLayer{
+    position: fixed;
 }
