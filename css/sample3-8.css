@@ -17,4 +17,8 @@ html,body{
 
 #overLayer{
     position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -244px;
+    margin-left: -325px;
 }
