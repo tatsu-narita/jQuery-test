@@ -5,6 +5,7 @@ html,body{
 }
 
 #glayLayer{
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -16,6 +17,7 @@ html,body{
 }
 
 #overLayer{
+    display: none;
     position: fixed;
     top: 50%;
     left: 50%;
