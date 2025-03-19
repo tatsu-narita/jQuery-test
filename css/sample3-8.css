@@ -36,4 +36,14 @@ html,body{
 
 dl dt{
     margin: 20px 50px;
+    font-size: large;
+    border: 1px solid #7baeb5;
+    border-left: 1em solid #7baeb5;
+    padding-left: 10px;
+    width: 600px;
+    cursor: pointer;
+}
+
+#glayLayer{
+    display: none;
 }
