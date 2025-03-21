@@ -52,4 +52,13 @@ dl dt{
     height: 100%;
     width: 100%;
     background: #7baeb5;
+    filter: alpha(opacity=75);
+    opacity: 0.75;
+}
+
+#overLayer{
+    display: none;
+    width: 400px;
+    background: white;
+    padding: 10px;
 }
