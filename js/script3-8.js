@@ -25,7 +25,10 @@ $(function () {
     });
     $("dt").click(function () { 
         $("#glayLayer").show();
-        $("#overLayer").show();
+        $("#overLayer").show().html($("+dd", this).html()).css({
+            "margin-top":"-"+$("overLayer").height()/2+"px",
+            "margin-left":"-"+$("overLayer").width()/2+"px"
+        });
         
     });
 });
