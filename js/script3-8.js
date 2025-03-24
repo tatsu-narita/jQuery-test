@@ -23,12 +23,16 @@ $(function () {
         $(this).hide();
         $("#overLayer").hide();
     });
+
     $("dt").click(function () { 
         $("#glayLayer").show();
-        $("#overLayer").show().html($("+dd", this).html()).css({
+        $("#overLayer").show().html("img src='images/close.png'class='close'"+$("+dd", this).html()).css({
             "margin-top":"-"+$("overLayer").height()/2+"px",
             "margin-left":"-"+$("overLayer").width()/2+"px"
         });
-        
+        $("overLayer img.close").click(function () { 
+            $("#glayLayer").hide();
+            $("#overLayer").hide();
+        });
     });
 });
