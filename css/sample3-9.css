@@ -1,4 +1,8 @@
 
 #floatWindow{
     display: none;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 500px;
 }
