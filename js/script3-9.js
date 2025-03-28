@@ -1,7 +1,7 @@
 
 $(function(){
-    $().click(function (e) { 
-        e.preventDefault();
-        
+    $("a.open").click(function (e) { 
+        $("#floatWindow").fadeIn("fast");
+        return false;
     });
 });
