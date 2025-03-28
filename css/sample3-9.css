@@ -5,4 +5,11 @@
     top: 100px;
     left: 100px;
     width: 500px;
+    height: 400px;
+}
+
+#floatWindow a.close{
+    position: absolute;
+    right: 20px;
+    top: 1px;
 }
