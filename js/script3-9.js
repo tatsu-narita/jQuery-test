@@ -4,4 +4,9 @@ $(function(){
         $("#floatWindow").fadeIn("fast");
         return false;
     });
+
+    $("#floatWindow a.close").click(function () { 
+        $("#floatWindow").fadeOut("fast");
+        return false;
+    });
 });
