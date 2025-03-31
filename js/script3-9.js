@@ -9,4 +9,8 @@ $(function(){
         $("#floatWindow").fadeOut("fast");
         return false;
     });
+
+    $("#floatWindow dl dt").mousedown(function (e) { 
+        $("#floatWindow").data("clickPointX", );
+    });
 });
