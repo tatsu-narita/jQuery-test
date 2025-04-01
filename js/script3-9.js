@@ -11,6 +11,7 @@ $(function(){
     });
 
     $("#floatWindow dl dt").mousedown(function (e) { 
-        $("#floatWindow").data("clickPointX", );
+        $("#floatWindow").data("clickPointX", e.pageX - $("#floatWindow").offset().left)
+        .date()
     });
 });
