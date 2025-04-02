@@ -28,5 +28,8 @@
 #floatWindow dl dt{
     height: 25px;
     line-height: 25px;
-    
+    text-indent: 1em;
+    color: white;
+    font-weight: bold;
+    cursor: move;
 }
