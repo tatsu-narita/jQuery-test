@@ -33,3 +33,7 @@
     font-weight: bold;
     cursor: move;
 }
+
+#floatWindow dl dd{
+    margin: 0;
+}
