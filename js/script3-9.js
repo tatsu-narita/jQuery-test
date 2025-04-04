@@ -18,7 +18,7 @@ $(function(){
         $(document).mousemove(function (e) { 
             $("#floatWindow").css({
                 "#top": e.pageY - $("#floatWindow").date("clickPointY") + "px",
-                
+                "left": e.pageX - $("#floatWindow").date("clickPointX") + "px"
             });
         });
     });
