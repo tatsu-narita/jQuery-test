@@ -36,4 +36,7 @@
 
 #floatWindow dl dd{
     margin: 0;
+    padding: 2em;
+    line-height: 1.5;
+    text-indent: 1em;
 }
