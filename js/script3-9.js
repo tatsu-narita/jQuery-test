@@ -1,6 +1,6 @@
 
 $(function(){
-    $("a.open").click(function (e) { 
+    $("a.open").click(function () { 
         $("#floatWindow").fadeIn("fast");
         return false;
     });
@@ -13,13 +13,15 @@ $(function(){
     $("#floatWindow dl dt").mousedown(function (e) { 
         $("#floatWindow")
         .data("clickPointX", e.pageX - $("#floatWindow").offset().left)
-        .date("clickPointY", e.pageY - $("#floatWindow").offset().top);
+        .data("clickPointY", e.pageY - $("#floatWindow").offset().top);
 
         $(document).mousemove(function (e) { 
             $("#floatWindow").css({
-                "#top": e.pageY - $("#floatWindow").date("clickPointY") + "px",
-                "left": e.pageX - $("#floatWindow").date("clickPointX") + "px"
+                "top": e.pageY - $("#floatWindow").data("clickPointY") + "px",
+                "left": e.pageX - $("#floatWindow").data("clickPointX") + "px"
             });
         });
+    }).mouseup(function () { 
+        $(document).off("mousemove");
     });
 });
