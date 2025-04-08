@@ -1,4 +1,11 @@
 
 h1{
     margin-top: 20px;
+    font-size: large;
+    color: #7cadb6;
+}
+
+dl dt{
+    border-left: 5px solid #7cadb6;
+    
 }
