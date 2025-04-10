@@ -7,5 +7,13 @@ h1{
 
 dl dt{
     border-left: 5px solid #7cadb6;
-    
+    border-bottom: 1px solid #7cadb6;
+    font-size: small;
+    margin: 0;
+    padding: 5px;
+}
+
+dl dt span{
+    color: red;
+    font-weight: bold;
 }
