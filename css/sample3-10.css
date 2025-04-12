@@ -17,3 +17,9 @@ dl dt span{
     color: red;
     font-weight: bold;
 }
+
+dl dd{
+    font-size: small;
+    margin: 0;
+    padding: 10px;
+}
