@@ -10,6 +10,13 @@ $(function() {
                     $(this).parent().prepend("<p class='error'>必須項目です</p>");
                 }
             }
+
+            //数値チェック
+            if($(this).hasClass("number")) {
+                if(isNaN($(this).val())) {
+                    $(this).parent().prepend("")
+                }
+            }
         });
     });
 });
