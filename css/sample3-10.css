@@ -31,5 +31,14 @@ dl dd input{
 dl dd label{
     position: relative;
     padding: 5px 5px 5px 25px;
-    
+    margin: 0 5px 0 -25px;
+    margin-left: -25px;
+    position: relative;
+    z-index: 1;
+}
+
+dl dd.error input ,
+dl dd.error textarea ,
+dl dd.error label {
+    background: #ffcccc;
 }
