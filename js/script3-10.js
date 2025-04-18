@@ -14,9 +14,11 @@ $(function() {
             //数値チェック
             if($(this).hasClass("number")) {
                 if(isNaN($(this).val())) {
-                    $(this).parent().prepend("")
+                    $(this).parent().prepend("<p class='error'>数値のみ入力可能です</p>");
                 }
             }
+
+            //メールアドレスのチェック
         });
     });
 });
