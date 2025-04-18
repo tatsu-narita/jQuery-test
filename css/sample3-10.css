@@ -42,3 +42,7 @@ dl dd.error textarea ,
 dl dd.error label {
     background: #ffcccc;
 }
+
+* html dl dd.error label {
+    background: none;
+}
