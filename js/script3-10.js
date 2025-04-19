@@ -19,6 +19,11 @@ $(function() {
             }
 
             //メールアドレスのチェック
+            if($(this).hasClass("mail")) {
+                if($(this).val() && !$(this).val().match(/.+@.¥../+/g)) {
+                    
+                }
+            }
         });
     });
 });
