@@ -46,3 +46,7 @@ dl dd.error label {
 * html dl dd.error label {
     background: none;
 }
+
+*+html dl dd.error label{
+    background: none;
+}
