@@ -20,8 +20,8 @@ $(function() {
 
             //メールアドレスのチェック
             if($(this).hasClass("mail")) {
-                if($(this).val() && !$(this).val().match(/.+@.¥../+/g)) {
-                    
+                if($(this).val() && !$(this).val().match(/.+@.+¥..+/g)) {
+                    $(this).parent().prepend("<p class='error'>メールアドレスの形式が異なります</p>");
                 }
             }
         });
