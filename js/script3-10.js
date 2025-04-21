@@ -24,6 +24,15 @@ $(function() {
                     $(this).parent().prepend("<p class='error'>メールアドレスの形式が異なります</p>");
                 }
             }
+
+            //メールアドレス確認のチェック
+            if($(this).hasClass("mail_check")) {
+                if($(this).val() && $(this)
+                .val()!=$("input[name="+$(this).attr("name")
+                .replace(/^(.+)_check$/,"$1")+"]").val()) {
+                    
+                }
+            }
         });
     });
 });
