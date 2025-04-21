@@ -50,3 +50,8 @@ dl dd.error label {
 *+html dl dd.error label{
     background: none;
 }
+
+dl dd p.error{
+    margin: 0;
+    
+}
