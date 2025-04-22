@@ -30,9 +30,11 @@ $(function() {
                 if($(this).val() && $(this)
                 .val()!=$("input[name="+$(this).attr("name")
                 .replace(/^(.+)_check$/,"$1")+"]").val()) {
-                    
+                    $(this).parent().prepend("<p class='error'>メールアドレスと内容が異なります</p>");
                 }
             }
         });
+
+        //ラジオボタンのチェック
     });
 });
