@@ -53,5 +53,6 @@ dl dd.error label {
 
 dl dd p.error{
     margin: 0;
-    
+    color: red;
+    font-weight: bold;
 }
