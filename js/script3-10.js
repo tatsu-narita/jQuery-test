@@ -36,5 +36,11 @@ $(function() {
         });
 
         //ラジオボタンのチェック
+        $("input[type='radio'].validate.required").each(function(){
+            if($("input[name="+$(this).attr("name")+"]:checked")
+            .length == 0){
+        $(this)}
+
+        });
     });
 });
